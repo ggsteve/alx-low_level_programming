@@ -9,11 +9,10 @@
  */
 int main(void)
 {
-	printf("%s%s%s%s%s\n",
-	       "with proper grammar, but the outcome is a ",
-	       "piece of art,", " ",
-	       "followed by a new line.",
-	       "");
+    printf("%s%s%s\n",
+           "with proper grammar, but the outcome is a ",
+           "piece of art,",
+           "");
 
-	return (0);
+    return (0);
 }
