@@ -1,10 +1,18 @@
 #include <stdio.h>
+
 /**
- * desciption : main - prints out a string to stdout.
- * return :  0 if success.
+ * main - Entry point of the program
+ *
+ * Description: This function prints a specific string and returns 0,
+ * indicating successful program execution.
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
-{ 
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+{
+    /* Use the puts function to print the string */
+    puts("\"Programming is like building a multilingual puzzle");
+
+    /* End the program with the value 0 (success) */
+    return 0;
 }
