@@ -9,26 +9,29 @@
  */
 int main(void)
 {
-    int n;
+	/* Variable declaration */
+	int n;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
+	/* Random number generation and assignment */
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-    printf("%d is ", n);
+	/* Printing the number along with its sign */
+	printf("%d is ", n);
 
-    if (n > 0)
-    {
-        printf("positive\n");
-    }
-    else if (n == 0)
-    {
-        printf("zero\n");
-    }
-    else
-    {
-        printf("negative\n");
-    }
+	/* Checking the sign of the number */
+	if (n > 0)
+	{
+		printf("positive\n");
+	}
+	else if (n == 0)
+	{
+		printf("zero\n");
+	}
+	else
+	{
+		printf("negative\n");
+	}
 
-    return (0);
+	return (0);
 }
-
