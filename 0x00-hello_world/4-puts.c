@@ -1,9 +1,11 @@
 #include <stdio.h>
 /**
- * desciption : Use the puts function to print the string
- * return :  End the program with the value 0
+ * desciption : main - prints out a string to stdout.
+ * return :  0 if success.
  */
-int main(void){       	
+int main(void){ 
+
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
+
 }
