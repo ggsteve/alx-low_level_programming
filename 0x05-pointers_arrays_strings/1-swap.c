@@ -7,10 +7,10 @@
  */
 void swap_int(int *a, int *b)
 {
-    /* Your alternate main function code here */
+	/* Your alternate main function code here */
 
-    int temp = *a;
-    *a = *b;
-    *b = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
