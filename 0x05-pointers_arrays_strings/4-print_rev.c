@@ -2,22 +2,29 @@
 #include <stdio.h>
 
 /**
- * print rev - Prints a string in reverse
- * @Gs: The string to print
- * Retin: void
+ * print_rev - Prints a string in reverse.
+ * @s: The string to print.
+ *
+ * Description: This function prints the characters of a string in reverse
+ * order, followed by a new line.
  */
-
 void print_rev(char *s)
 {
 	int c = 0;
-      while (s[c] != '\0') 
-      {
-      c++;
-      }      
-      
-      for (c -= 1; c >= 0; c--)
-      {	      
-      putchar(s[c]);
-      }
-      _putchar ('\n');
+
+	/* Calculate the c of the string */
+	while (s[c] != '\0')
+	{
+		c++;
+	}
+
+	/* Print the string in reverse */
+	for (c -= 1; c >= 0; c--)
+	{
+		_putchar(s[c]);
+	}
+
+	/* Print a new line */
+	_putchar('\n');
 }
+
