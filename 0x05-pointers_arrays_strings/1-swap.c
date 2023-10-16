@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * swap_main - Entry point for the alternate functionality.
- *
- * Return: Always 0.
+ * swap_int - Swaps the values of two integers.
+ * @a: Pointer to the first integer.
+ * @b: Pointer to the second integer.
  */
 void swap_int(int *a, int *b)
 {
     /* Your alternate main function code here */
-	int temp = *a;
-	*a = *b;
-	*b = temp;
 
-   
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
+
