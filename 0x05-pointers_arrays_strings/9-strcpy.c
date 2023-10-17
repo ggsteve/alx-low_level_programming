@@ -8,14 +8,14 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-    /* Declare variables */
-    int i;
+	/* Declare variables */
+	int i;
 
-    for (i = 0; src[i] != '\0'; i++)
-    {
-        dest[i] = src[i];
-    }
-    dest[i] = '\0';  /* Fix the increment here */
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';  /* Fix the increment here */
 
-    return dest;
+	return (dest);  /* Add parentheses here */
 }
