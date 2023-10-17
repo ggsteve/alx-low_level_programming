@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 
 /* Function to generate a random password */
 void generatePassword(char *password, int length) {
@@ -11,8 +10,10 @@ void generatePassword(char *password, int length) {
     /* Seed the random number generator */
     srand((unsigned int)time(NULL));
 
-    /* Generate the password */
+    /* Declare loop variable at the beginning */
     int i;
+
+    /* Generate the password */
     for (i = 0; i < length; ++i) {
         int index = rand() % (int)(sizeof(charset) - 1);
         password[i] = charset[index];
@@ -25,7 +26,7 @@ void generatePassword(char *password, int length) {
 int main() {
     /* Assuming the maximum password length is 10 characters */
     const int passwordLength = 10;
-    
+
     /* Use dynamic memory allocation instead of variable-length array */
     char *password = (char *)malloc((passwordLength + 1) * sizeof(char));
 
