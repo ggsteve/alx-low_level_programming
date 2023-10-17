@@ -1,33 +1,36 @@
 #include "main.h"
-#include <stdio.h>
-
-/* Function prototype */
-int _atoi(char *s);
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _atoi - convert a string to an integer
+ * @s: the pointer to convert
+ * Return: An integer
  */
-int main(void)
+int _atoi(char *s)
 {
-    int nb;
+	/* Declare variables */
+	int c = 0;
+	unsigned int ni = 0;
+	int min = 1;
+	int isi = 0;
 
-    nb = _atoi("98");
-    printf("%i\n", nb);
-    nb = _atoi("-402");
-    printf("%i\n", nb);
-    nb = _atoi("          ------++++++-----+++++--98");
-    printf("%i\n", nb);
-    nb = _atoi("214748364");
-    printf("%i\n", nb);
-    nb = _atoi("0");
-    printf("%i\n", nb);
-    nb = _atoi("Suite 402");
-    printf("%i\n", nb);
-    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-    printf("%i\n", nb);
-    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-    printf("%i\n", nb);
-    return (0);
+	while (s[c])
+	{
+		if (s[c] == 45)
+		{
+			min *= -1;
+		}
+		while (s[c] >= 48 && s[c] <= 57)
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[c] - '0');
+			c++;
+		}
+		if (isi == 1)
+		{
+			break;
+		}
+		c++;
+	}
+	ni *= min;
+	return (ni);
 }
