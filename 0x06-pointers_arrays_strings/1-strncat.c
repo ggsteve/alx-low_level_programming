@@ -14,13 +14,11 @@ char *_strncat(char *dest, char *src, int n)
 {
     int index = 0, dest_len = 0;
 
-    /* Find the length of dest */
     while (dest[index])
         dest_len++;
 
-    /* Append at most n bytes from src to dest */
     for (index = 0; src[index] && index < n; index++)
         dest[dest_len++] = src[index];
 
-    return (dest);
+    return dest;
 }
